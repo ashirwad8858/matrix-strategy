@@ -1,0 +1,12 @@
+name: Python Matrix Build
+
+on:
+  push: 
+
+jobs:
+  build:
+    runs-on: ${{matrix.os}}
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+    
